@@ -66,6 +66,6 @@ for epoch in range(100):
 
 print('Finished Training')
 
-PATH = './cifar_net.pth'
+PATH = './devil_net.pth'
 torch.save(net.state_dict(), PATH)
 

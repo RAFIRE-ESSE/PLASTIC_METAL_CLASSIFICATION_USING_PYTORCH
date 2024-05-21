@@ -42,7 +42,7 @@ class Net(nn.Module):
 
 
 net = Net()
-net.load_state_dict(torch.load("./cifar_net.pth"))
+net.load_state_dict(torch.load("./devil_net.pth"))
 z=cv2.resize(cv2.imread("archives-ewaste-one_one.jpg"),(200,200))
 z=TF.to_tensor(z)
 z.unsqueeze_(0)
